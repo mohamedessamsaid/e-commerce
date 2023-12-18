@@ -1,0 +1,9 @@
+.Navbar {
+    font-style: normal;
+}
+
+.social {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

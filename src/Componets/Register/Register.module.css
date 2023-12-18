@@ -1,0 +1,8 @@
+.conatiner {
+    width: 70%;
+    margin: auto;
+}
+.conatiner form{
+    display: flex;
+    flex-direction: column;
+}

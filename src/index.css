@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+
+.product>.btn {
+  transition: transform 1s, opacity 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+.cartcar {
+  color: #41277c;
+  font-size: 20px;
+}
+
+.size {
+  font-weight: bold !important;
+}
+
+.tra {
+  color: #e22222;
+}
+
+.clear {
+  border: #22db14 1px solid !important;
+}
+
+.cate {
+  border: #d2d2d2 1px solid;
+  border-radius: 7px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.cate:hover {
+  box-shadow: 1px 1px 10px #4fa74f;
+}
+.gape {
+  gap: 25px;
+}
+.relative {
+  position: relative !important;
+}
+.badge_left {
+  left: 48px;
+}
+
+.dic {
+  text-decoration: none !important;
+}
+
+.half{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width{
+  width: 25%;
+}
+
+.spacetop{
+  padding-top:1.9cm !important;
+}
+.heart{
+  font-size: 35px!important;
+  color:rgb(182, 173, 173)!important;
+  margin-top: 7px!important;
+   width: 70px!important;
+   outline: none!important;
+   text-transform: uppercase!important;
+   cursor: pointer!important;
+   font-weight: bold!important;
+   &:hover{
+       color: rgb(142, 90, 90)!important;
+   }
+  &.active {
+   color: rgb(192, 39, 39) !important;
+  }
+}
